@@ -1,0 +1,99 @@
+{
+    "name": "ActionsTest2JoysB_Clean",
+    "maps": [
+        {
+            "name": "Mapa2Joys2",
+            "id": "d9ceb3ca-48d5-46a1-a750-fefea53c8e71",
+            "actions": [
+                {
+                    "name": "Button2",
+                    "type": "Button",
+                    "id": "a3131cea-6c2b-4d12-9b0f-87d8b3cd8c61",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Button3",
+                    "type": "Button",
+                    "id": "674d84c6-a9ba-4755-885c-a36be68eb924",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a5739e9e-b270-42d4-96f3-812b2f378fec",
+                    "path": "<HID::USB Gamepad >/button3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Scheme2",
+                    "action": "Button2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a548e564-2e0e-4ed2-8fd4-bc1181cfcdd0",
+                    "path": "<HID::DragonRise Inc.   Generic   USB  Joystick  >/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Button2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "297e7ce7-398b-4bda-813e-12903ccd3817",
+                    "path": "<HID::USB Gamepad >/button2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Scheme2",
+                    "action": "Button3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "053497d3-ea84-4923-a28c-91da5c11a6f8",
+                    "path": "<HID::DragonRise Inc.   Generic   USB  Joystick  >/button2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Button3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Scheme1",
+            "bindingGroup": "Scheme1",
+            "devices": [
+                {
+                    "devicePath": "<Joystick>",
+                    "isOptional": true,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Scheme2",
+            "bindingGroup": "Scheme2",
+            "devices": [
+                {
+                    "devicePath": "<Joystick>",
+                    "isOptional": true,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

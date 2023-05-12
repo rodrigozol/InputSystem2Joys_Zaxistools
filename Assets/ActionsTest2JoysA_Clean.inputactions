@@ -1,0 +1,99 @@
+{
+    "name": "ActionsTest2JoysA_Clean",
+    "maps": [
+        {
+            "name": "Mapa2Joys",
+            "id": "48e1af36-bebb-4c97-8f52-59f4196277cd",
+            "actions": [
+                {
+                    "name": "Button0",
+                    "type": "Button",
+                    "id": "10cd52a4-4528-4d2d-a6e4-c1c5bb5fbeb6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Button1",
+                    "type": "Button",
+                    "id": "ede5c15f-1853-44db-87cb-0366d03be11e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c29fb809-7049-4178-b0ab-b407ac7a2637",
+                    "path": "<HID::USB Gamepad >/button3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Scheme1",
+                    "action": "Button0",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d2779023-5516-4917-b283-a3c8b8cede53",
+                    "path": "<HID::Microntek              USB Joystick          >/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Button0",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7d2c4925-c4cb-46b9-956f-89e30cbdc06b",
+                    "path": "<HID::USB Gamepad >/button2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Scheme1",
+                    "action": "Button1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2b64a6fb-d9a2-47cf-91e2-b05e838112ce",
+                    "path": "<HID::Microntek              USB Joystick          >/button2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Button1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Scheme1",
+            "bindingGroup": "Scheme1",
+            "devices": [
+                {
+                    "devicePath": "<Joystick>",
+                    "isOptional": true,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Scheme2",
+            "bindingGroup": "Scheme2",
+            "devices": [
+                {
+                    "devicePath": "<Joystick>",
+                    "isOptional": true,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

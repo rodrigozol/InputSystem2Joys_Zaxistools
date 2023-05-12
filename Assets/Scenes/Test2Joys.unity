@@ -131,12 +131,12 @@ GameObject:
   m_Component:
   - component: {fileID: 6984538}
   m_Layer: 0
-  m_Name: Players_NewInputSystem
+  m_Name: Players_NewInputSystem_CodigosSeparadosFunciona
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6984538
 Transform:
   m_ObjectHideFlags: 0
@@ -226,14 +226,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 124857280}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34acc99ef580a3b4e986aad0de9bab4e, type: 3}
+  m_Script: {fileID: 11500000, guid: 230ebdb495b2d9142b42aef485cde6a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerInput: {fileID: 124857283}
   balls:
   - {fileID: 293160170}
   - {fileID: 1377242738}
-  id: 2
+  actionsArrayName: []
+  actionsArray: []
+  segurandoB2: 
+  ActionMapAsset: {fileID: -944628639613478452, guid: 6eb179e9c5451e540ae060042d907884,
+    type: 3}
 --- !u!114 &124857283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,7 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 4251bdf41546aa64c8ccf0128fe9f1d0,
+  m_Actions: {fileID: -944628639613478452, guid: 6eb179e9c5451e540ae060042d907884,
     type: 3}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
@@ -261,8 +265,8 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: Scheme2
-  m_DefaultActionMap: Mapa2Joys
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Mapa2Joys2
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!1 &254808919
@@ -458,6 +462,147 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 293160170}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &439422818
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 439422819}
+  - component: {fileID: 439422822}
+  - component: {fileID: 439422821}
+  - component: {fileID: 439422820}
+  m_Layer: 0
+  m_Name: Player1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &439422819
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439422818}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 484954511}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &439422820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439422818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d72f55c97f405f4caf694dc6d53d3fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInput: {fileID: 439422822}
+  balls:
+  - {fileID: 1606467353}
+  - {fileID: 1135619702}
+  id: 1
+  actionsArrayName: []
+  actionsArray: []
+  segurandoB: 
+  segurandoB2: 
+  ActionMapAsset: {fileID: -944628639613478452, guid: 9ef474018c131d64f923076e35865a27,
+    type: 3}
+--- !u!114 &439422821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439422818}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34acc99ef580a3b4e986aad0de9bab4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInput: {fileID: 439422822}
+  balls:
+  - {fileID: 1606467353}
+  - {fileID: 1135619702}
+  id: 1
+  actionsArrayName: []
+  actionsArray: []
+  segurandoB: 
+  ActionMapAsset: {fileID: -944628639613478452, guid: 9ef474018c131d64f923076e35865a27,
+    type: 3}
+--- !u!114 &439422822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439422818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 9ef474018c131d64f923076e35865a27,
+    type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 1
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Mapa2Joys
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!1 &484954510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 484954511}
+  m_Layer: 0
+  m_Name: Players_NewInputSystem_CodigosJuntos_Troca
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &484954511
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484954510}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 439422819}
+  - {fileID: 615140399}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &529744463
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,6 +637,114 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &615140398
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 615140399}
+  - component: {fileID: 615140402}
+  - component: {fileID: 615140401}
+  - component: {fileID: 615140400}
+  m_Layer: 0
+  m_Name: Player2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &615140399
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615140398}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 484954511}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &615140400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615140398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d72f55c97f405f4caf694dc6d53d3fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInput: {fileID: 615140402}
+  balls:
+  - {fileID: 293160170}
+  - {fileID: 1377242738}
+  id: 2
+  actionsArrayName: []
+  actionsArray: []
+  segurandoB: 
+  segurandoB2: 
+  ActionMapAsset: {fileID: -944628639613478452, guid: 6eb179e9c5451e540ae060042d907884,
+    type: 3}
+--- !u!114 &615140401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615140398}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 230ebdb495b2d9142b42aef485cde6a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInput: {fileID: 615140402}
+  balls:
+  - {fileID: 293160170}
+  - {fileID: 1377242738}
+  actionsArrayName: []
+  actionsArray: []
+  segurandoB2: 
+  ActionMapAsset: {fileID: -944628639613478452, guid: 6eb179e9c5451e540ae060042d907884,
+    type: 3}
+--- !u!114 &615140402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615140398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 6eb179e9c5451e540ae060042d907884,
+    type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 1
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Mapa2Joys2
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &681274814
 GameObject:
   m_ObjectHideFlags: 0
@@ -2046,6 +2299,11 @@ MonoBehaviour:
   - {fileID: 1606467353}
   - {fileID: 1135619702}
   id: 1
+  actionsArrayName: []
+  actionsArray: []
+  segurandoB: 
+  ActionMapAsset: {fileID: -944628639613478452, guid: 9ef474018c131d64f923076e35865a27,
+    type: 3}
 --- !u!114 &2062693746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2058,7 +2316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 4251bdf41546aa64c8ccf0128fe9f1d0,
+  m_Actions: {fileID: -944628639613478452, guid: 9ef474018c131d64f923076e35865a27,
     type: 3}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
@@ -2073,7 +2331,7 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: Scheme1
+  m_DefaultControlScheme: 
   m_DefaultActionMap: Mapa2Joys
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
